@@ -19,8 +19,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setSupportActionBar(binding.homeToolbar) // kode digunakan untuk memberitahu MainActivity mengenai actionbar yang akan digunakan
-        // supportActionBar?.title = "Berita App" // setelah set support action bar, ubah title
-        // supportActionBar?.setIcon(R.drawable.ic_baseline_policy_24) // cara menambahkan logo drawable
+
 
         supportActionBar?.setDisplayShowTitleEnabled(false) // Set false untuk menonaktifkan title
 
