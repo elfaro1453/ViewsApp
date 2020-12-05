@@ -1,9 +1,15 @@
 package id.idn.fahru.viewsapp.data
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
 /**
  * Created by Imam Fahrur Rofi on 16/07/2020.
  */
-data class News(var title: String, var desc: String, var photo: String)
+
+// gunakan Parcelize dari import kotlinx.parcelize karena kotlinx.android.extensions telah deprecated
+@Parcelize
+data class News(var title: String, var desc: String, var photo: String) : Parcelable
 
 object NewsModel {
     val newslist = listOf<News>(
@@ -60,6 +66,5 @@ object NewsModel {
             "detikcom | 1 menit yang lalu",
             "https://cdn.statically.io/img/padangkita.com/f=auto/wp-content/uploads/2020/07/9e644c5c-1ec3-4ff9-aea2-2b0dae30cc5d.jpg"
         )
-
     )
 }

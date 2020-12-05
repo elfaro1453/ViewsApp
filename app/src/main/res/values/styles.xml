@@ -10,4 +10,6 @@
     <style name="StyleToolbar" parent="ThemeOverlay.MaterialComponents.Light">
         <item name="android:background">@android:color/white</item>
     </style>
+
+    <style name="DetailNewsTheme" parent="Theme.AppCompat.Light" />
 </resources>
